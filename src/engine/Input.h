@@ -9,10 +9,10 @@ class Input
 {
 public:
 
-	static bool IsKeyPressed(const Key key);
-	static bool IsKeyReleased(const Key key);
-	static bool IsMousePressed(const sf::Mouse::Button code);
-	static bool IsMouseReleased(const sf::Mouse::Button code);
+	static bool KeyPressed(const Key key);
+	static bool KeyReleased(const Key key);
+	static bool MousePressed(const sf::Mouse::Button code);
+	static bool MouseReleased(const sf::Mouse::Button code);
 
 	Input() = default;
 	~Input() = delete;

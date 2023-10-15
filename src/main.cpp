@@ -1,8 +1,21 @@
-#include <entt/entt.hpp>
-#include <SFML/Graphics.hpp>
+#include "engine/System.h"
+#include "engine/Input.h"
+
 int main()
 {
-	entt::registry reg;
-	sf::Window wnd;
+	System::Initialization();
+	while (System::window->isOpen())
+	{
+		System::Update();
+		while (System::window->pollEvent(*System::event)) 
+		{
+			if (Input::KeyPressed(Key::Escape))
+				System::window->close();
+		}
+
+		System::window->clear();
+
+		System::window->display();
+	}
 	return 0;
 }
