@@ -23,7 +23,7 @@ void System::Initialization()
 	clock = make_unique<sf::Clock>();
 	resolution.x = sf::VideoMode::getDesktopMode().width;
 	resolution.y = sf::VideoMode::getDesktopMode().height;
-	window->create(sf::VideoMode(resolution.x, resolution.y), L"Battle Key PvP", sf::Style::Close, sf::ContextSettings(4, 4, 8));
+	window->create(sf::VideoMode(resolution.x, resolution.y), L"Арена золотой сферы", sf::Style::Close, sf::ContextSettings(4, 4, 8));
 	camera->reset(sf::FloatRect(0, 0, static_cast<float>(resolution.x), static_cast<float>(resolution.y)));
 	camera->setCenter(0, 0);
 	camera_position = camera->getCenter();

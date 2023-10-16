@@ -1,6 +1,7 @@
  
 # Prerequisites
 *.d
+*.bat
 
 # Compiled Object files
 *.slo

@@ -1,5 +1,5 @@
-#include "engine/System.h"
-#include "engine/Input.h"
+#include "System.h"
+#include "Input.h"
 
 int main()
 {
